@@ -1,0 +1,39 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "ttwo-wechat-xcx",
+	"description": "shopping",
+	"appid": "wxd4eb4c7efb647edf",
+	"setting": {
+		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
+		"es6": false,
+		"postcss": false,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
+		"minified": false,
+		"autoAudits": false,
+		"newFeature": true,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": false,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionRoot": "cloud/",
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {}
+}

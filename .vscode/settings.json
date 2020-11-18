@@ -1,0 +1,10 @@
+{
+    "launch": {
+        "configurations": [],
+        "compounds": [],
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
+    },
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "editor.tabSize": 2
+}
