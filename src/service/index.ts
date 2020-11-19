@@ -1,18 +1,14 @@
-import fetchRequest from '../utils/request'
-const baseUrl = '/iot-service-course/api/course';
+import { getGoodsListService } from "./home";
+import { getClassifyListService } from "./classify";
+import { getCartListService } from "./cart";
+import { getUserInfoService, postUserInfoService } from "./mine";
+import { doLoginService } from "./user";
 
-export function getGoodsList(query: { id: string }) {
-	return fetchRequest({
-		url: `${baseUrl}/list`,
-		method: 'GET',
-		params: query
-	})
-}
-
-export function getCollection(data) {
-	return fetchRequest({
-		url: `${baseUrl}/collection`,
-		method: 'POST',
-		data
-	})
-}
+export {
+  getGoodsListService,
+  getClassifyListService,
+  getCartListService,
+  getUserInfoService,
+  postUserInfoService,
+  doLoginService
+};

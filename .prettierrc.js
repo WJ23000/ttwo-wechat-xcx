@@ -11,5 +11,7 @@ module.exports = {
   semi: true, 
   endOfLine: "auto",
   // 行尾逗号,默认none,可选 none|es5|all
-  TrailingCooma: "all"
+  TrailingCooma: "none"
 };
+
+/** VsCode按Alt+Shift+F键使用 */

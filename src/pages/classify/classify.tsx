@@ -4,7 +4,7 @@ import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
-import { getGoodsList } from '../../service/classify'
+import { getClassifyListService } from '@ttwo/service'
 import './classify.styl'
 
 export default class Classify extends Component<any> {
@@ -20,12 +20,12 @@ export default class Classify extends Component<any> {
   componentWillMount () { }
 
   componentDidMount () { 
-    getGoodsList({id: "1"}).then(res=>{
+    getClassifyListService({id: "1"}).then(res=>{
       console.log("分类====>",res);
     })
   }
 
-  onTitle() {
+  public onTitle(): void {
     Taro.navigateTo({
       url: `/pages/cloud/cloud`
     })  

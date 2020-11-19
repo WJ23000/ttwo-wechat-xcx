@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'ttwo-wechat-xcx',
   date: '2020-8-31',
@@ -59,6 +60,9 @@ const config = {
         }
       }
     }
+  },
+  alias: { // 使用别名引入模块
+    '@ttwo': path.resolve(__dirname, 'src'),
   }
 }
 

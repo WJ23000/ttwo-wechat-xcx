@@ -1,18 +1,15 @@
-import fetchRequest from '../utils/request'
-const baseUrl = '/iot-service-course/api/course';
+import { UserInfoParams } from "@ttwo/model";
+import { getUserInfo, postUserInfo } from "@ttwo/api";
 
-export function getGoodsList(query: { id: string }) {
-	return fetchRequest({
-		url: `${baseUrl}/list`,
-		method: 'GET',
-		params: query
-	})
+export function getUserInfoService(data) {
+  return getUserInfo(data).then((data) => {
+    return data;
+  });
 }
 
-export function getCollection(data) {
-	return fetchRequest({
-		url: `${baseUrl}/collection`,
-		method: 'POST',
-		data
-	})
+export function postUserInfoService(data: UserInfoParams) {
+  return postUserInfo(data).then((data) => {
+    return data;
+  });
 }
+

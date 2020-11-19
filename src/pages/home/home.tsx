@@ -4,8 +4,8 @@ import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
-import { getGoodsList } from '../../service/index'
-import './index.styl'
+import { getGoodsListService } from '@ttwo/service'
+import './home.styl'
 
 export default class Index extends Component<any> {
 
@@ -37,7 +37,7 @@ export default class Index extends Component<any> {
 
   // 对应onReady,页面首次渲染完毕时执行
   componentDidMount () { 
-    getGoodsList({id: "1"}).then(res=>{
+    getGoodsListService({id: "1"}).then(res=>{
       console.log("首页====>",res);
     })
   } 
@@ -54,7 +54,7 @@ export default class Index extends Component<any> {
   render () {
     const { title, type, goodsList } = this.state
     return (
-      <View className='index'>
+      <View className='home'>
         <View>{title}</View>
         <View className={classnames('name-test', type ? 'red': 'blue')}>测试classnames</View>
         {/* 按条件渲染 */}

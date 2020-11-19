@@ -12,10 +12,10 @@ export default {
   ],
   tabBar: {
     list: [{
-      pagePath: 'pages/index/index',
+      pagePath: 'pages/home/home',
       text: '首页',
-      iconPath: 'assets/resource/index.png',
-      selectedIconPath: 'assets/resource/index_active.png'
+      iconPath: 'assets/resource/home.png',
+      selectedIconPath: 'assets/resource/home_active.png'
     }, {
       pagePath: 'pages/classify/classify',
       text: '分类',

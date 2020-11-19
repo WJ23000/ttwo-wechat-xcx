@@ -1,4 +1,4 @@
 export default {
-    navigationBarTitleText: '订单支付'
-  }
+  navigationBarTitleText: '订单支付'
+}
   

@@ -1,10 +1,7 @@
-import fetchRequest from '../utils/request'
-const baseUrl = '/iot-service-course/api/course';
+import { doLogin } from "@ttwo/api";
 
-export function doLogin(query: { code: string }) {
-	return fetchRequest({
-		url: `${baseUrl}/list`,
-		method: 'GET',
-		params: query
-	})
+export function doLoginService(data) {
+  return doLogin(data).then((data) => {
+    return data;
+  });
 }
