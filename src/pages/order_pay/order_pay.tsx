@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro, { getCurrentInstance } from '@tarojs/taro'
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
@@ -13,7 +13,9 @@ export default class OrderPay extends Component<any> {
 
   // 对应onLoad,页面创建时执行
   componentWillMount () { 
-    const {id, title} = Taro.getCurrentInstance().router.params
+    const res: any = getCurrentInstance();
+    const obj: any = res.router.params
+    const { id, title } = obj;
     Taro.setNavigationBarTitle({
       title: title
     });

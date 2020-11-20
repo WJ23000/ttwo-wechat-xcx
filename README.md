@@ -19,3 +19,9 @@ npm run dev:weapp
 ### 小程序云开发
 > 安装wx-server-sdk(npm install --save wx-server-sdk@latest)
 
+
+### 注意
+```
+1.css单位使用px,不想转换时使用Px/PX
+```
+
