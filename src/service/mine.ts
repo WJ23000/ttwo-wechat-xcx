@@ -1,15 +1,14 @@
-import { UserInfoParams } from "@ttwo/model";
-import { getUserInfo, postUserInfo } from "@ttwo/api";
+import { UserInfoParams, PhoneParams } from "@ttwo/model";
+import { updateUserInfo, sendPhoneCode } from "@ttwo/api";
 
-export function getUserInfoService(data) {
-  return getUserInfo(data).then((data) => {
+export function updateUserInfoService(data: UserInfoParams) {
+  return updateUserInfo(data).then((data) => {
     return data;
   });
 }
 
-export function postUserInfoService(data: UserInfoParams) {
-  return postUserInfo(data).then((data) => {
+export function sendPhoneCodeService(data: PhoneParams) {
+  return sendPhoneCode(data).then((data) => {
     return data;
   });
 }
-

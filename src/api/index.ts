@@ -5,7 +5,7 @@ import { getClassifyList } from "./classify";
 // 购物车
 import { getCartList } from "./cart";
 // 我的
-import { getUserInfo, postUserInfo } from "./mine";
+import { updateUserInfo, sendPhoneCode } from "./mine";
 // 用户相关
 import { doLogin } from "./user";
 
@@ -13,7 +13,7 @@ export {
   getGoodsList,
   getClassifyList,
   getCartList,
-  getUserInfo,
-  postUserInfo,
+  updateUserInfo,
+  sendPhoneCode,
   doLogin
 };

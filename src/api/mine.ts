@@ -1,19 +1,21 @@
 import { fetchRequest } from "@ttwo/utils";
-import { UserInfoParams } from "@ttwo/model";
-const baseUrl = "/iot-service-course/api/course";
+import { UserInfoParams, PhoneParams } from "@ttwo/model";
+const baseUrl = "/iot-service-user/api/user";
 
-export function getUserInfo(query: { id: string }) {
+// 修改用户信息
+export function updateUserInfo(query: UserInfoParams) {
   return fetchRequest({
-    url: `${baseUrl}/userInfo`,
+    url: `${baseUrl}/updateStuMess`,
     method: "GET",
     params: query
-  });
+  })
 }
 
-export function postUserInfo(data: UserInfoParams) {
+// 手机验证码
+export function sendPhoneCode(data: PhoneParams) {
   return fetchRequest({
-    url: `${baseUrl}/userInfo`,
+    url: `${baseUrl}/sendIdentifyCode`,
     method: "POST",
-    data
+    params: data
   });
 }

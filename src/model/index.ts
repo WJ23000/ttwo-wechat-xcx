@@ -1,5 +1,5 @@
 import { GoodsList } from "./interface/home";
 
-import { UserInfoParams } from "./interface/mine";
+import { UserInfoParams, PhoneParams } from "./interface/mine";
 
-export { GoodsList, UserInfoParams };
+export { GoodsList, UserInfoParams, PhoneParams };

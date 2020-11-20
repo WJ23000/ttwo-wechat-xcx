@@ -62,7 +62,7 @@ const config = {
     }
   },
   alias: { // 使用别名引入模块
-    '@ttwo': path.resolve(__dirname, 'src'),
+    '@ttwo': path.resolve(__dirname,'../','src')
   }
 }
 

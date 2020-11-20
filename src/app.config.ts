@@ -1,6 +1,6 @@
 export default {
   pages: [
-    'pages/index/index',
+    'pages/home/home',
     'pages/classify/classify',
     'pages/cart/cart',
     'pages/mine/mine',

@@ -5,3 +5,7 @@ export interface UserInfoParams { // 用户信息
 	sex?: string
 	homePage?: string
 }
+
+export interface PhoneParams {
+	phone?: string
+}
